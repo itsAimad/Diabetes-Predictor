@@ -214,6 +214,18 @@ def main():
             text-align:center;
             margin-left:64px;
             }
+
+        h4{
+            text-align:center;
+            color:#61bdbd;
+            margin-top:60px;
+            transition: transform 0.7s ease-out, filter 0.7s ease-out;
+
+        }
+        h4:hover{
+            transform:scale(1.1);
+            filter: drop-shadow(0px 0px 7px #61bdbd);
+        }
             </style>
     """
 
@@ -254,6 +266,6 @@ def main():
     with col2:
             add_predictions(input_dict)
  
-
+    st.markdown("<h4>Aimad Bouya</h4>",unsafe_allow_html=True)
 if __name__ == "__main__":
     main()
